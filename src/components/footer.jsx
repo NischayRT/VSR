@@ -19,7 +19,7 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
@@ -33,13 +33,13 @@ const Footer = () => {
                 />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
               >
                 <Image 
-                  src="/assets/instagram.png" 
+                  src="/assets/insta.png" 
                   alt="Instagram" 
                   width={24} 
                   height={24}
@@ -47,13 +47,13 @@ const Footer = () => {
                 />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://www.x.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
               >
                 <Image 
-                  src="/assets/twitter.png" 
+                  src="/assets/x.png" 
                   alt="Twitter" 
                   width={24} 
                   height={24}
@@ -61,7 +61,7 @@ const Footer = () => {
                 />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"

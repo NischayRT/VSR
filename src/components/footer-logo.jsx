@@ -1,4 +1,4 @@
-const footer-logo = ({ className }) => (
+const FooterLogo = ({ className }) => (
   <svg width="166" height="62" viewBox="0 0 166 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M33.9375 61.837V57.251H34.7375L36.8375 60.6341V57.251H37.575V61.837H36.775L34.6625 58.4664V61.837H33.9375Z" fill="white"/>
 <path d="M41.4121 60.0953H42.7996L42.1121 58.2534L41.4246 60.0953H41.4121ZM43.4496 61.837L43.0496 60.7594H41.1621L40.7621 61.837H39.9746L41.7496 57.251H42.4621L44.2496 61.837H43.4621H43.4496Z" fill="white"/>
@@ -49,4 +49,4 @@ const footer-logo = ({ className }) => (
 
 );
 
-export default footer-logo;
+export default FooterLogo;
