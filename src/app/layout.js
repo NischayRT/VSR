@@ -1,17 +1,12 @@
-// src/app/layout.js
-import "./globals.css";
-
-export const metadata = {
-  title: "VSR Vriksha",
-  description: "Nature Cure Center",
-};
-
+import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* 3. Add the font class here */}
-      <body >
+      <body>
+        <Navbar />
         {children}
+        <Footer />  {/* Add this line */}
       </body>
     </html>
   );
