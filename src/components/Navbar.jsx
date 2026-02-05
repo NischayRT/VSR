@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "./logo.jsx";
+
 const Navbar = () => {
   return (
     <header className="fixed top-0 z-50 w-full bg-white shadow-sm">
@@ -10,17 +11,16 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Logo />
-
         </div>
 
-        {/* Navigation */}
-<nav className="flex justify-evenly w-3/5 hidden sm:flex items-center gap-8 px-10 text-sm font-medium text-gray-600">
-          <Link href="/" className="nav-menu hover:text-primary">About Us</Link>
-          <Link href="/programs" className="nav-menu hover:text-primary">Programs</Link>
-          <Link href="/services" className="nav-menu hover:text-primary">Services</Link>
-          <Link href="/gallery" className="nav-menu hover:text-primary">Gallery</Link>
-          <Link href="/blogs" className="nav-menu hover:text-primary">Blogs</Link>
-          <Link href="/contact" className="nav-menu hover:text-primary">Contact Us</Link>
+        {/* Navigation - visible on medium screens (768px) and up */}
+        <nav className="hidden md:flex items-center gap-8 font-medium text-gray-600 nav-menu">
+          <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+          <Link href="/programs" className="hover:text-primary transition-colors">Programs</Link>
+          <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
+          <Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link>
+          <Link href="/blogs" className="hover:text-primary transition-colors">Blogs</Link>
+          <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
         </nav>
 
         {/* Call Button */}
