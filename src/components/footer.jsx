@@ -113,7 +113,7 @@ const Footer = () => {
                   src="/assets/location.png" 
                   alt="Location" 
                   width={20} 
-                  height={20}
+                  height={22}
                   className="w-5 h-5 flex-shrink-0 mt-1"
                 />
                 <p className="text-white/90 leading-relaxed">

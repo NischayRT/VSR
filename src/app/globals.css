@@ -22,8 +22,10 @@ h1, h2, h3 {
 
 :root {
   --brand-brown: #9c3f1a;
+  --brand-yellow: #F4C430;
 }
 
+/* Brown call button (for navbar) */
 .call-btn {
   background-color: var(--brand-brown);
   color: #ffffff;
@@ -34,19 +36,57 @@ h1, h2, h3 {
   text-decoration: none;
   white-space: nowrap;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
 }
 
 .call-btn:hover {
   background-color: #7f3214;
   transform: translateY(-1px);
 }
-
+@media (max-width: 768px) {
+  .call-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.hero {
+  background-image: url('../../public/hero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+/* Dark overlay for better text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left, rgba(64, 19, 0, 0) 22.38%, rgba(64, 19, 0, 0.758489) 58.17%, #401300 100%);
+
+  z-index: 1;
+}
+
+/* Make sure content is above overlay */
+.hero > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* Apply nav-menu styles only to the nav container, not individual links */
@@ -64,4 +104,10 @@ h1, h2, h3 {
 header {
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hero .call-btn{
+  background-color: var(--brand-yellow);
+}
+.home-stat{
+  color: var(--brand-brown);
 }
