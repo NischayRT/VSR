@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Houstiq";
-  src: url("/Houstiq.otf") format("opentype");
+  src: url("/font/Houstiq.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -60,7 +60,7 @@ h1, h2, h3 {
 }
 
 .hero {
-  background-image: url('../../public/hero.webp');
+  background-image: url('../../public/assets/hero.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
