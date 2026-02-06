@@ -1,179 +1,141 @@
-import Image from "next/image";
 import Link from "next/link";
-import FooterLogo from "../../public/assets/SVG/footer-logo";
+import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn, FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#9c3f1a] text-white">
+    <footer className="bg-gradient-to-r from-orange-800 to-orange-900 text-white">
       {/* Main Footer Content */}
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        {/* Left Column - Logo and Description */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-serif font-bold">VSR Vriksha</h2>
+          <p className="text-sm leading-relaxed opacity-90">
+            A center for naturopathic treatment of myriad ailments. 
+            Experience the healing power of nature amidst the pristine environs.
+          </p>
           
-          {/* Left Column - Logo and Description */}
-          <div className="space-y-6">
-            <FooterLogo />
-            <p className="text-white/90 leading-relaxed max-w-sm">
-              A center for naturopathic treatment of myriad ailments. Experience the healing power of nature amidst the pristine environs.
-            </p>
-            
-            {/* Social Media Icons */}
-            <div className="flex gap-4">
-              <a 
-                href="https://www.facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <Image 
-                  src="/assets/facebook.png" 
-                  alt="Facebook" 
-                  width={24} 
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-              <a 
-                href="https://www.instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <Image 
-                  src="/assets/insta.png" 
-                  alt="Instagram" 
-                  width={24} 
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-              <a 
-                href="https://www.x.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <Image 
-                  src="/assets/x.png" 
-                  alt="Twitter" 
-                  width={24} 
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-              <a 
-                href="https://www.linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <Image 
-                  src="/assets/linkedin.png" 
-                  alt="LinkedIn" 
-                  width={24} 
-                  height={24}
-                  className="w-6 h-6"
-                />
-              </a>
-            </div>
+          {/* Social Media Icons */}
+          <div className="flex gap-4 pt-2">
+            <Link 
+              href="#" 
+              className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-colors"
+              aria-label="Facebook"
+            >
+              <FaFacebookF className="w-5 h-5" />
+            </Link>
+            <Link 
+              href="#" 
+              className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="w-5 h-5" />
+            </Link>
+            <Link 
+              href="#" 
+              className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-colors"
+              aria-label="Twitter"
+            >
+              <FaXTwitter className="w-5 h-5" />
+            </Link>
+            <Link 
+              href="#" 
+              className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn className="w-5 h-5" />
+            </Link>
           </div>
+        </div>
 
-          {/* Middle Column - Quick Links */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Quick links</h3>
-            <nav className="flex flex-col space-y-3">
-              <Link href="/about" className="text-white/90 hover:text-white transition-colors">
+        {/* Middle Column - Quick Links */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Quick links</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/about" className="text-sm hover:text-orange-200 transition-colors">
                 About Us
               </Link>
-              <Link href="/programs" className="text-white/90 hover:text-white transition-colors">
+            </li>
+            <li>
+              <Link href="/programs" className="text-sm hover:text-orange-200 transition-colors">
                 Programs
               </Link>
-              <Link href="/services" className="text-white/90 hover:text-white transition-colors">
+            </li>
+            <li>
+              <Link href="/services" className="text-sm hover:text-orange-200 transition-colors">
                 Services
               </Link>
-              <Link href="/gallery" className="text-white/90 hover:text-white transition-colors">
+            </li>
+            <li>
+              <Link href="/gallery" className="text-sm hover:text-orange-200 transition-colors">
                 Gallery
               </Link>
-              <Link href="/blogs" className="text-white/90 hover:text-white transition-colors">
+            </li>
+            <li>
+              <Link href="/blogs" className="text-sm hover:text-orange-200 transition-colors">
                 Blogs
               </Link>
-              <Link href="/contact" className="text-white/90 hover:text-white transition-colors">
+            </li>
+            <li>
+              <Link href="/contact" className="text-sm hover:text-orange-200 transition-colors">
                 Contact Us
               </Link>
-            </nav>
-          </div>
+            </li>
+          </ul>
+        </div>
 
-          {/* Right Column - Contact Info */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Contact Us</h3>
-            <div className="space-y-4">
-              
-              {/* Address */}
-              <div className="flex gap-3">
-                <Image 
-                  src="/assets/location.png" 
-                  alt="Location" 
-                  width={20} 
-                  height={22}
-                  className="w-5 h-5 flex-shrink-0 mt-1"
-                />
-                <p className="text-white/90 leading-relaxed">
-                  Irish Valley, Dharmaram Village, Near Bits Pilani campus, Keesara Mandal, Medchal District, Shamirpet, Telangana - 501301
-                </p>
-              </div>
+        {/* Right Column - Contact Info */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+          <div className="space-y-4">
+            
+            {/* Address */}
+            <div className="flex gap-3">
+              <FaLocationDot className="w-5 h-5 mt-1 flex-shrink-0" />
+              <p className="text-sm">
+                Irish Valley, Dharmaram Village, Near Bits Pilani campus, 
+                Keesara Mandal, Medchal District, Shamirpet, Telangana - 501301
+              </p>
+            </div>
 
-              {/* Phone Numbers */}
-              <div className="flex gap-3">
-                <Image 
-                  src="/assets/call.png" 
-                  alt="Phone" 
-                  width={20} 
-                  height={20}
-                  className="w-5 h-5 flex-shrink-0 mt-1"
-                />
-                <div className="text-white/90">
-                  <a href="tel:+918431004444" className="hover:text-white transition-colors">
-                    +91 84310 04444
-                  </a>
-                  <span className="mx-2">|</span>
-                  <a href="tel:+918905004444" className="hover:text-white transition-colors">
-                    +91 89050 04444
-                  </a>
-                </div>
-              </div>
-
-              {/* Email */}
-              <div className="flex gap-3">
-                <Image 
-                  src="/assets/mail.png" 
-                  alt="Email" 
-                  width={20} 
-                  height={20}
-                  className="w-5 h-5 flex-shrink-0 mt-1"
-                />
-                <a 
-                  href="mailto:contact@vsrvriksha.com" 
-                  className="text-white/90 hover:text-white transition-colors"
-                >
-                  contact@vsrvriksha.com
+            {/* Phone Numbers */}
+            <div className="flex gap-3">
+              <FaPhone className="w-5 h-5 flex-shrink-0" />
+              <div className="text-sm">
+                <a href="tel:+918431004444" className="hover:text-orange-200 transition-colors">
+                  +91 84310 04444
+                </a>
+                {" | "}
+                <a href="tel:+918905004444" className="hover:text-orange-200 transition-colors">
+                  +91 89050 04444
                 </a>
               </div>
             </div>
-          </div>
 
+            {/* Email */}
+            <div className="flex gap-3">
+              <FaEnvelope className="w-5 h-5 flex-shrink-0" />
+              <a 
+                href="mailto:contact@vsrvriksha.com" 
+                className="text-sm hover:text-orange-200 transition-colors"
+              >
+                contact@vsrvriksha.com
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Bottom Bar - Copyright */}
-      <div className="border-t border-white/20">
-        <div className="container py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p className="text-white/80">
-              © Copyright 2025 All Rights Reserved
-            </p>
-            <Link href="/privacy" className="text-white/80 hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-          </div>
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-2">
+          <p className="text-sm opacity-80">
+            © Copyright 2025 All Rights Reserved
+          </p>
+          <Link href="/privacy" className="text-sm hover:text-orange-200 transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

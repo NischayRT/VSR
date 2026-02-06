@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../public/assets/SVG/logo.jsx";
+import Logo from "../../public/assets/SVG/logo.svg";
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="flex items-center">
-          <Logo />
+          <Image src={Logo} alt="VSR Vriksha Logo" width={150} height={50} />
         </div>
 
         {/* Navigation - visible on medium screens (768px) and up */}
