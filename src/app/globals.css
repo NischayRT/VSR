@@ -129,3 +129,10 @@ header {
 .home-stat {
   color: var(--brand-brown);
 }
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  scrollbar-width: none; 
+}
