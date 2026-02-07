@@ -1,11 +1,11 @@
 import PageBanner from "@/components/PageBanner";
 import "../globals.css";
-import OurStory from "@/components/OurStory";
+import OurStory from "./OurStory";
 import Image from 'next/image';
-import Amenities from "@/components/Amenities";
+import Amenities from "./Amenities";
 import HolisticTreatments from "@/components/HolisticTreatments";
 import Rejuvenation from "@/components/Rejuvenation";
-import LocationHighlights from "@/components/LocationHighlights";
+import LocationHighlights from "./LocationHighlights";
 
 export default function Page() {
   return (

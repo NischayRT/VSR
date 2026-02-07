@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
-import WellnessIntro from "@/components/WellnessIntro";
+import WellnessIntro from "./WellnessIntro";
 import HealthPackage from "@/components/HealthPackage";
 import HolisticTreatments from "@/components/HolisticTreatments";
 import "../globals.css";
